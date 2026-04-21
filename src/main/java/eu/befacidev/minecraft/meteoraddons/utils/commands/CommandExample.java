@@ -1,4 +1,4 @@
-package com.example.addon.commands;
+package eu.befacidev.minecraft.meteoraddons.utils.commands;
 
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;

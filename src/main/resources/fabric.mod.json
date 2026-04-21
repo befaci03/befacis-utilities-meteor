@@ -1,27 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "befaci-utils",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "name": "Befacis Utilities",
+  "description": "A Meteor Addon that adds many utilities such as Mass TPA 'n' more.",
   "authors": [
-    "seasnail"
+    "Befaci"
   ],
   "contact": {
-    "sources": "https://github.com/MeteorDevelopment/meteor-addon-template"
+    "sources": "https://github.com/befaci03/befacis-utilities-meteor"
   },
-  "icon": "assets/template/icon.png",
+  "icon": "assets/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.AddonTemplate"
+      "eu.befacidev.minecraft.meteoraddons.utils.Main"
     ]
   },
-  "mixins": [
-    "addon-template.mixins.json"
-  ],
+  "mixins": [],
   "custom": {
-    "meteor-client:color": "225,25,25",
+    "meteor-client:color": "30,175,250",
     "modmenu": {
       "parent": {
         "id": "meteor-client"
