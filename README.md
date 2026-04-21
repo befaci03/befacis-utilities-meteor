@@ -1,25 +1,6 @@
-# Meteor Addon Template
+# Befaci's Meteor Utilities (BMU)
 
-A template to allow easy usage of the Meteor Addon API.
-
-### How to use
-
-#### Use GitHub Template (Recommended)
-
-- Click the green `Use this template` button in the top right corner of this page.  
-  This will create a new repository with this template and a clean history.
-
-#### Clone Manually
-
-- Alternatively, clone this repository using these commands for a clean history:
-  ```bash
-  git clone --depth 1 https://github.com/MeteorDevelopment/meteor-addon-template your-addon-name
-  cd your-addon-name
-  rm -rf .git
-  git init
-  git add .
-  git commit -m "Initial commit from template"
-  ```
+## todo
 
 #### Development
 
