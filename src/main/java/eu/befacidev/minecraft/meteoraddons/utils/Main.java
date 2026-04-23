@@ -1,8 +1,8 @@
 package eu.befacidev.minecraft.meteoraddons.utils;
 
-import eu.befacidev.minecraft.meteoraddons.utils.commands.CommandExample;
+import eu.befacidev.minecraft.meteoraddons.utils.commands.AhGlitch;
 import eu.befacidev.minecraft.meteoraddons.utils.hud.HudExample;
-import eu.befacidev.minecraft.meteoraddons.utils.modules.ModuleExample;
+import eu.befacidev.minecraft.meteoraddons.utils.modules.MassTPA;
 import com.mojang.logging.LogUtils;
 import meteordevelopment.meteorclient.addons.GithubRepo;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
@@ -15,18 +15,19 @@ import org.slf4j.Logger;
 
 public class Main extends MeteorAddon {
     public static final Logger LOG = LogUtils.getLogger();
-    public static final Category CATEGORY = new Category("Example");
-    public static final HudGroup HUD_GROUP = new HudGroup("Example");
+    // listen, i didnt had any ideas so mb
+    public static final Category CATEGORY = new Category("Befaci's");
+    public static final HudGroup HUD_GROUP = new HudGroup("Befaci's");
 
     @Override
     public void onInitialize() {
-        LOG.info("Initializing Befaci's Utilities for Meteor Client");
+        LOG.info("Initializing Befaci Utilities for Meteor Client");
 
         // Modules
-        Modules.get().add(new ModuleExample());
+        Modules.get().add(new MassTPA());
 
         // Commands
-        Commands.add(new CommandExample());
+        Commands.add(new AhGlitch());
 
         // HUD
         Hud.get().register(HudExample.INFO);

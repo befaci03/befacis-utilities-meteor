@@ -29,6 +29,14 @@ dependencies {
     modImplementation(libs.meteor.client)
 }
 
+loom {
+    runs {
+        named("client") {
+            programArgs("--username", "Player403")
+        }
+    }
+}
+
 tasks {
     processResources {
         val propertyMap = mapOf(

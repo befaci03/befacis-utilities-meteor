@@ -8,18 +8,18 @@ import net.minecraft.command.CommandSource;
 /**
  * The Meteor Client command API uses the <a href="https://github.com/Mojang/brigadier">same command system as Minecraft does</a>.
  */
-public class CommandExample extends Command {
+public class AhGlitch extends Command {
     /**
      * The {@code name} parameter should be in kebab-case.
      */
-    public CommandExample() {
-        super("example", "Sends a message.");
+    public AhGlitch() {
+        super("ahglitch", "Spams 10 times the /ah sell command.");
     }
 
     @Override
     public void build(LiteralArgumentBuilder<CommandSource> builder) {
         builder.executes(context -> {
-            info("hi");
+
             return SINGLE_SUCCESS;
         });
 
